@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fila de Atendimento</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Fila de Atendimento</h1>
+    <div id="fila"></div>
+    <form id="addClienteForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" maxlength="20" required>
+        <label for="tipo">Tipo de Atendimento (N ou P):</label>
+        <input type="text" id="tipo" name="tipo" maxlength="1" required>
+        <button type="submit">Adicionar Cliente</button>
+    </form>
+    <button onclick="atualizarFila()">Atualizar Fila</button>
+    <script src="scripts.js"></script>
+</body>
+</html>
